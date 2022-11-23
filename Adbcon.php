@@ -1,0 +1,14 @@
+<?php
+
+require __DIR__.'/vendor/autoload.php';
+
+use Kreait\Firebase\Factory;
+use Kreait\Firebase\Auth;
+
+$factory = (new Factory)->withServiceAccount('admin-fucos-firebase-adminsdk-rcfb3-04fb3a6b79.json')
+->withDatabaseUri('https://admin-fucos-default-rtdb.firebaseio.com/');
+
+$database = $factory->createDatabase();
+$auth = $factory->createAuth();
+
+?>
