@@ -7,7 +7,7 @@ include('dbcon.php');
 if(isset($_POST['delete_btn']))
 {
     $del_id = $_POST['delete_btn'];
-    $ref_table= 'Question/'.$del_id;
+    $ref_table= 'python/'.$del_id;
     $deletequery_result = $database->getReference($ref_table)->remove();
 
     if($deletequery_result)
@@ -41,7 +41,7 @@ if(isset($_POST['delete_btn']))
             'oD'=>$oD,
             'ans'=>$ans,
         ];
-        $ref_table='Question/'.$key;
+        $ref_table='python/'.$key;
         $updatequery_result = $database->getReference($ref_table)->update($updateData);
 
         if($updatequery_result)
@@ -77,7 +77,7 @@ if(isset($_POST['save_question']))
         'oD'=>$oD,
         'ans'=>$ans,
     ];
-    $ref_table= "Question";
+    $ref_table= "python";
     $postRef_result = $database->getReference($ref_table)->push($postData);
 
     if($postRef_result)

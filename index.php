@@ -41,7 +41,7 @@ include('includes/header.php');
                         <?php
                         include('dbcon.php');
 
-                        $ref_table = 'Question';
+                        $ref_table = 'python';
                         $fetchdata = $database->getReference($ref_table)->getValue();
 
                         if($fetchdata > 0)

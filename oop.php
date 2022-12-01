@@ -19,7 +19,7 @@ include('includes/header.php');
         <div class="card">
             <div class="card-header">
                 <h4>
-                    Firebase crud
+                    OOP QUIZ
                     <a href="addoop-question.php" class="btn btn-primary float-end">add question</a>
                 </h4>
                 </div>

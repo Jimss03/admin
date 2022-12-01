@@ -7,18 +7,18 @@ include('dbcon.php');
 if(isset($_POST['delete_btn']))
 {
     $del_id = $_POST['delete_btn'];
-    $ref_table= 'javaquiz/'.$del_id;
+    $ref_table= 'Cloud/'.$del_id;
     $deletequery_result = $database->getReference($ref_table)->remove();
 
     if($deletequery_result)
     {
         $_SESSION['status'] ="deleted";
-        header('Location: javaq.php');
+        header('Location: cloud.php');
     }
     else
     {
         $_SESSION['status'] ="delete error";
-        header('Location: javaq.php');
+        header('Location: cloud.php');
     }
 }
 
@@ -41,18 +41,18 @@ if(isset($_POST['delete_btn']))
             'oD'=>$oD,
             'ans'=>$ans,
         ];
-        $ref_table='javaquiz/'.$key;
+        $ref_table='Cloud/'.$key;
         $updatequery_result = $database->getReference($ref_table)->update($updateData);
 
         if($updatequery_result)
         {
             $_SESSION['status'] ="updated";
-            header('Location: javaq.php');
+            header('Location: cloud.php');
         }
         else
         {
             $_SESSION['status'] ="update error";
-            header('Location: javaq.php');
+            header('Location: cloud.php');
         }
     }
 
@@ -77,18 +77,18 @@ if(isset($_POST['save_question']))
         'oD'=>$oD,
         'ans'=>$ans,
     ];
-    $ref_table= "javaquiz";
+    $ref_table= "Cloud";
     $postRef_result = $database->getReference($ref_table)->push($postData);
 
     if($postRef_result)
     {
         $_SESSION['status'] ="add Question success";
-        header('Location: javaq.php');
+        header('Location: cloud.php');
     }
     else
     {
         $_SESSION['status'] ="add Question success";
-        header('Location: javaq.php');
+        header('Location: cloud.php');
     }
 }
 

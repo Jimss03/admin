@@ -8,19 +8,23 @@
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
 
         <li class="nav-item">
-          <a class="nav-link" aria-current="index.php" href="index.php">Pyhton</a>
+          <a class="nav-link" aria-current="index.php" href="index.php">Python</a>
         </li>
         
         <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="javaq.php">java</a>
+          <a class="nav-link" aria-current="page" href="cloud.php">Cloud</a>
         </li>
         
         <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="dbquestion.php">DATA BASE</a>
+          <a class="nav-link" aria-current="page" href="dbquestion.php">DBMS</a>
         </li>
 
         <li class="nav-item">
           <a class="nav-link" aria-current="page" href="oop.php">OOP</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="register.php">register</a>
         </li>
        
         <li class="nav-item">

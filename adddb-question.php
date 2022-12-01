@@ -8,7 +8,7 @@ include('includes/header.php')
             <div class="card">
             <div class="card-header">
                 <h4>
-                    add python Question
+                    ADD DBMS Question
                     <a href="dbquestion.php" class="btn btn-danger float-end">back</a>
                 </h4>
                 </div>

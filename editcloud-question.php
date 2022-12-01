@@ -8,7 +8,7 @@ include('includes/header.php')
             <div class="card">
             <div class="card-header">
                 <h4>
-                    edit
+                    edit cloud Question
                     <a href="index.php" class="btn btn-danger float-end">back</a>
                 </h4>
                 </div>
@@ -20,14 +20,14 @@ include('includes/header.php')
                 if(isset($_GET['id']))
                 {
                     $key_child =$_GET['id'];
-                    $ref_table ='javaquiz';
+                    $ref_table ='Cloud';
                     $getdata = $database->getReference($ref_table)->getChild($key_child)->getValue();
 
                     if($getdata >0)
                     {
                         ?>
                         
-                 <form action="codej.php" method="POST">
+                 <form action="codec.php" method="POST">
                     <input type="hidden" name="key" value="<?=$key_child?>">
 
                     <div class="form-group mb-3">
@@ -72,7 +72,7 @@ include('includes/header.php')
                         {
 
                         $_SESSION['status'] ="invalid ID";
-                        header('Location: javaq.php');
+                        header('Location: cloud.php');
                         exit();
                         }
                         }
@@ -80,7 +80,7 @@ include('includes/header.php')
                         {
 
                         $_SESSION['status'] ="no found";
-                        header('Location: javaq.php');
+                        header('Location: cloud.php');
                         exit();
                         }
                         $key_child = $_GET['id'];

@@ -19,8 +19,8 @@ include('includes/header.php');
         <div class="card">
             <div class="card-header">
                 <h4>
-                    java Questions
-                    <a href="addj-question.php" class="btn btn-primary float-end">add question</a>
+                   cloud Question
+                    <a href="addc-question.php" class="btn btn-primary float-end">add question</a>
                 </h4>
                 </div>
                 <table class="table table-bordered table-striped">
@@ -41,7 +41,7 @@ include('includes/header.php');
                         <?php
                         include('dbcon.php');
 
-                        $ref_table = 'javaquiz';
+                        $ref_table = 'Cloud';
                         $fetchdata = $database->getReference($ref_table)->getValue();
 
                         if($fetchdata > 0)
@@ -59,11 +59,11 @@ include('includes/header.php');
                                     <td><?= $row['oD']; ?></td>
                                     <td><?= $row['ans']; ?></td>
                                     <td>
-                                        <a href="editjava-question.php?id=<?=$key;?>" class="btn btn-primary btn-sm">EDIT</a>
+                                        <a href="editcloud-question.php?id=<?=$key;?>" class="btn btn-primary btn-sm">EDIT</a>
                                 </td>
                                 <td>
                                         
-                                        <form action="codej.php" method="POST">
+                                        <form action="codec.php" method="POST">
                                             <button type="submit" name="delete_btn" value="<?=$key?>" class="btn btn-danger btn-sm">Delete</button>
                                         </form>
                                 </td>

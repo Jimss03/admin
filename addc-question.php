@@ -8,12 +8,12 @@ include('includes/header.php')
             <div class="card">
             <div class="card-header">
                 <h4>
-                    add java Question
-                    <a href="javaq.php" class="btn btn-danger float-end">back</a>
+                    Add cloud Question
+                    <a href="cloud.php" class="btn btn-danger float-end">back</a>
                 </h4>
                 </div>
                 <div class="card-body">
-                    <form action="codej.php" method="POST">
+                    <form action="codec.php" method="POST">
 
                     <div class="form-group mb-3">
                         <label>Question</label>
